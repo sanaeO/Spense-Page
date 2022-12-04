@@ -1,0 +1,379 @@
+/* david rouge
+rouge la noit */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+/* Add static fonts ttf */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+ --section-color : #e6e7e6
+}
+body{
+  font-family: 'Cabin', sans-serif;
+}
+/* Container  */
+.container{
+  padding-left : 15px;
+  padding-right : 15px;
+  margin-left : auto;
+  margin-right : auto;
+}
+/* Container  */
+.container{
+  padding-left : 15px;
+  padding-right : 15px;
+  margin-left : auto;
+  margin-right : auto;
+}
+/* Ghadi okayn9ss lwidth  */
+/* Small Devices  */
+@media(min-width: 768px)
+{
+  .container{
+      width : 750px;
+  }
+}
+/* Medium Devices  */
+@media(min-width : 992px)
+{
+  .container{
+   width : 970px
+  }
+}
+/* Large Screens */
+@media(min-width: 1200px)
+{
+  .container{
+ width : 1170px
+  }
+}
+ul{
+  list-style: none;
+}
+/* Start Landing  */
+.landing{
+ background: var(--section-color);
+}
+.landing .top-bar{
+  background : #000;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  padding: 10px 0px;
+  color : #FFF;
+  font-size: 14px;
+  text-align: center;
+}
+.landing .top-bar span{
+  border-bottom: 1px solid #FFF;
+}
+.landing .top-bar img{
+  width : 20px;
+}
+.landing .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:60px;
+  font-size: 18px;
+}
+.landing .navbar .logo{
+ font-weight: bold;
+}
+.landing .navbar .list{
+  display: flex;
+  gap:20px;
+}
+.landing .navbar .list li{
+
+}
+.landing .navbar .list li a{
+  text-decoration: none;
+  color : #000;
+
+}
+.landing .navbar .compte{
+  display: flex;
+  align-items: center;
+  gap:40px;
+}
+.landing .navbar .compte a{
+ text-decoration: none;
+ color : #000;
+}
+.landing .navbar .compte a.started{
+  background : #000;
+  color : #FFF;
+  border-radius: 5px;
+  padding: 13px 13px;
+}
+.landing .navbar .nav{
+  display: none;
+}
+@media(max-width : 767px)
+{
+  .landing .navbar .nav{
+    display : flex;
+    cursor : pointer ;
+  }
+  .landing .navbar .list , 
+  .landing .navbar .compte{
+    display : none;
+  }
+}
+/* LANDING  */
+.landing .content{
+  padding: 30px 0px;
+}
+.landing .content .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media(max-width : 991px)
+{
+  .landing .content .container{
+    flex-direction: column;
+  }
+  .landing .content .container .info{
+    order :2;
+  }
+}
+.landing .content .info{
+ flex: 1;
+}
+.landing .content .info h1{
+ font-size: 45px;
+}
+@media(max-width : 991px)
+{
+  .landing .content .info h1{
+    font-size: 35px;
+    padding: 20px 0px;
+   }
+}
+@media(max-width : 767px)
+{
+  .landing .content .info h1{
+    font-size: 25px;
+    padding: 20px 0px;
+   }
+}
+.landing .content .info p{
+ color : #777;
+ padding: 7px 0px;
+}
+.landing .content .info ul{
+  padding: 10px 0;
+
+}
+.landing .content .info ul li{
+  margin-bottom: 8px;
+  color: rgb(76, 76, 76) ;
+}
+.landing .content .info ul li i{
+  margin-right: 7px;
+  color: #000;
+  font-size: 20px;
+}
+.landing .content .info form {
+  display: flex;
+  gap: 10px;
+}
+@media(max-width : 767px)
+{
+  .landing .content .info form {
+    flex-direction: column;
+  }
+}
+.landing .content .info form input{
+  height: 50px;
+  border-radius: 5px;
+  outline: none;
+  /* border: none; */
+}
+.landing .content .info form input[type="email"]
+{
+  width:50%;
+  padding: 0px 20px;
+  border: 1px solid #DDD;
+}
+.landing .content .info form input[type="submit"]{
+ background: #000;
+ color: #FFF;
+ width: fit-content;
+ padding: 0px 18px;
+}
+.landing .content .image , 
+.landing .content .image picture{
+ flex: 1;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ height: 100%;
+}
+.landing .content .image img{
+ max-width: 100%;
+ /* object-fit: cover; */
+ height: 500px ;
+}
+@media(max-width : 991px)
+{
+  .landing .content .container .image{
+    order :1;
+    width: 100%;
+  }
+  .landing .content .container .image img{
+    height: 300px;
+    width: 100%;
+  }
+
+}
+/* End Landing  */
+/* Start Logos  */
+.logos{
+  padding: 50px 0;
+}
+.logos .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.logos .container img{
+  width: 120px;
+}
+/* End Logos  */
+/* Start Secure  */
+.secure{
+
+}
+.secure .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--section-color);
+  padding: 30px 0 0 0; 
+}
+@media(max-width : 991px)
+{
+  .secure .container {
+    flex-direction: column;
+  }
+}
+@media(max-width : 767px)
+{
+  .secure .container {
+    flex-direction: column;
+  }
+}
+.secure .container .info{
+  flex : 1;
+  padding-left: 20px;
+}
+.secure .container .info  h2{
+  font-size: 33px;
+}
+.secure .container .info  p{
+  color : #777;
+  padding: 10px 0;
+  line-height: 1.8;
+}
+.secure .container .info a{
+  display: block;
+  padding: 10px 0;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.secure .container .image{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.secure .container .image img{
+  max-width: 100%;
+}
+
+/* End secure  */
+/* Start Editor  */
+.editor{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.editor .container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+@media(max-width : 991px)
+{
+  .editor .container{
+    flex-direction: column;
+  }
+  .editor .container .image{
+    order : 2;
+  }
+  .editor .container .info{
+   order: 1;
+   text-align: center;
+  }
+}
+.editor .container .image{
+  flex : 1;
+}
+.editor .container .image img{
+  width: 100%;
+}
+.editor .container .info{
+  flex : 1;
+}
+.editor .container .info h2{
+  margin-bottom: 10px;
+}
+.editor .container .info p{
+  color : #777;
+  line-height: 1.8;
+}
+.editor .container .info a{
+  display: block;
+  padding: 10px 0;
+  color: #777;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* End Editor  */
+/* Start Footer  */
+.footer{
+ padding-top: 50px;
+ padding-bottom: 50px;
+ background: #000;
+ color : #FFF
+}
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer .container .box:first-of-type{
+  width : 300px
+}
+.footer .container .box  h4{
+  margin-bottom: 13px;
+}
+.footer .container .box  p{
+  color: #777;
+  line-height: 1.6;
+}
+.footer .container .box a{
+  text-decoration: none;
+  color: #777;
+  }
+/* End Footer */
